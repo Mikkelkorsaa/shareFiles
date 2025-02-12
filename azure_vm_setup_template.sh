@@ -16,7 +16,7 @@ check_sshpass() {
     if ! command -v sshpass &> /dev/null
     then
         echo "Error: sshpass is not installed"
-        echo "Install it using: sudo pacman -S sshpass"
+        echo "Install the package: sshpass"
         exit 1
     fi
 }
@@ -26,7 +26,7 @@ check_prerequisites() {
     if ! command -v az &> /dev/null
     then
         echo "Error: azure-cli is not installed"
-        echo "Install it using: sudo pacman -S azure-cli"
+        echo "Install the package: azure-cli"
         exit 1
     fi
     check_sshpass
